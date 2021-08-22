@@ -4,10 +4,12 @@ import org.junit.jupiter.api.*;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+@DisplayNameGeneration(DisplayNameGenerator.ReplaceUnderscores.class)
 class StudyTest {
 
     @Test
-    void create1() {
+    @DisplayName("테스트 제목 만들기 \uD83D\uDE31")
+    void create1_this_underscore_maybe_delete() {
         //given
         final Study study = new Study();
         //then
