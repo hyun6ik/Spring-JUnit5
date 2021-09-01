@@ -88,6 +88,7 @@ public class RepeatTest {
     @CsvSource({"홍길동, 100", "아아아,200"})
     void parameterizedTest5(@AggregateWith(PersonAggregator.class) Person person) {
         System.out.println(person);
+        System.out.println(person.getAge());
     }
 
     public static class PersonAggregator implements ArgumentsAggregator {
