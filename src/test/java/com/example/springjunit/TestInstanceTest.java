@@ -23,7 +23,7 @@ public class TestInstanceTest {
 
     }
 
-    int value = 1;
+    int value = 0;
 
     @FastTest
     @DisplayName("스터디 만들기 fast")
