@@ -32,6 +32,7 @@ public class TestInstanceTest {
         System.out.println(value++);
         final Study study = new Study(StudyStatus.ENDED,1);
         assertThat(study.getLimit()).isGreaterThan(0);
+
     }
 
     @SlowTest
